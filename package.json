@@ -92,11 +92,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-//  "config": {
-//    "commitizen": {
-//      "path": "node_modules/cz-conventional-changelog"
-//    }
-//  },
   "devDependencies": {
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0"
