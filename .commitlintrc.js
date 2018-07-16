@@ -1,6 +1,6 @@
 module.exports = {
     extends: [
-      'commitlint-config-cz'
+      'cz'
     ],
     rules: {
     }
