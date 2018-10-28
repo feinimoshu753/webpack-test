@@ -102,7 +102,8 @@
     "commitlint-config-cz": "^0.10.0",
     "cz-conventional-changelog": "^2.1.0",
     "cz-customizable": "^5.2.0",
-    "husky": "^1.0.0-rc.13"
+    "husky": "^1.0.0-rc.13",
+    "url-parse": "^1.4.3"
   },
   "husky": {
     "hooks": {
