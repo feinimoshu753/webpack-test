@@ -19,8 +19,8 @@ class TestPlugin {
             compilation.entrypoints['xxxx'] = {
                 name: 'xxxx.js',
             }
-            console.log(11, '###')
-            console.log(compilation.entrypoints, '------')
+            // console.log(11, '###')
+            // console.log(compilation.entrypoints, '------')
         })
     }
 }
