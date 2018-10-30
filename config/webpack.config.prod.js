@@ -127,14 +127,26 @@ module.exports = {
           //   },
           //   loader: require.resolve('eslint-loader'),
           // },
-          {
-            loader: require.resolve('./loader/test-loader.js')
-          },
-          {
-            loader: require.resolve('./loader/test-loader1.js')
-          }
+          // {
+          //   loader: require.resolve('./loader/test-loader.js')
+          // },
+          // {
+          //   loader: require.resolve('./loader/test-loader1.js')
+          // }
         ],
         include: paths.appSrc,
+      },
+      {
+          test: /\.js$/,
+          use: [require.resolve('./loader/test-loader2.js')]
+      },
+      {
+          test: /\.js$/,
+          use: [require.resolve('./loader/test-loader1.js')]
+      },
+      {
+          test: /\.js$/,
+          use: [require.resolve('./loader/test-loader.js')]
       },
       {
         // "oneOf" will traverse all following loaders until one will
@@ -161,6 +173,7 @@ module.exports = {
               compact: true,
             },
           },
+
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
