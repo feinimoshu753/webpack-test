@@ -144,10 +144,10 @@ module.exports = {
           test: /\.js$/,
           use: [require.resolve('./loader/test-loader1.js')]
       },
-      {
-          test: /\.js$/,
-          use: [require.resolve('./loader/test-loader.js')]
-      },
+      // {
+      //     test: /\.json$/,
+      //     use: [require.resolve('./loader/test-loader.js')]
+      // },
       {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall
@@ -251,6 +251,10 @@ module.exports = {
           // ** STOP ** Are you adding a new loader?
           // Make sure to add the new loader(s) before the "file" loader.
         ],
+      },
+      {
+          test: /\.json$/,
+          use: [require.resolve('json-loader')],
       },
     ],
   },
