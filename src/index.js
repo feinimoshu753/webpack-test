@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import test from './test.json';
-console.log(test);
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+let a = 10;
+
+function test() {
+    console.log(111)
+}
+
+test();
+console.log(a)
