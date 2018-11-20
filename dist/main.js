@@ -81,19 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./build/config.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./build/config.js":
-/*!*************************!*\
-  !*** ./build/config.js ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function(__dirname) {const config = {\n    entry: './src/index.js',\n    output: {\n        filename: '[name].js',\n        path: __dirname + '/dist'\n    },\n    mode: 'development',\n    plugins: [\n        new webpack.DefinePlugin({\n            'process.env.NODE_ENV': '\"development\"',\n        }),\n    ]\n}\n\nmodule.exports = config\n/* WEBPACK VAR INJECTION */}.call(this, \"/\"))\n\n//# sourceURL=webpack:///./build/config.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ \"./src/test.json\");\nvar _test__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./test */ \"./src/test.json\", 1);\n\nlet client = 10;\n\nconsole.log(_test__WEBPACK_IMPORTED_MODULE_0__)\n\nfunction test() {\n    console.log(0)\n}\n\ntest();\nconsole.log(client)\n\nconst promise = new Promise(function (resolve, reject) {\n    setTimeout(_ => {\n        resolve(1111)\n        console.log(2222)\n    }, 1000)\n})\n\npromise.then(value => {\n    console.log(value)\n})\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/test.json":
+/*!***********************!*\
+  !*** ./src/test.json ***!
+  \***********************/
+/*! exports provided: edward, city, default */
+/***/ (function(module) {
+
+eval("module.exports = {\"edward\":1,\"city\":500};\n\n//# sourceURL=webpack:///./src/test.json?");
 
 /***/ })
 
